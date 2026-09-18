@@ -1,3 +1,4 @@
+import shutil
 import yt_dlp
 from pydub import AudioSegment
 import os
@@ -9,6 +10,12 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 def download_youtube_audio(url: str) -> str:
     output_path = os.path.join(
         DOWNLOAD_DIR, "%(title)s.%(ext)s"
+    )
+    node_path = shutil.which("node")
+
+    if node_path is None:
+       raise RuntimeError(
+        "Node.js is not installed or cannot be detected on Streamlit Cloud."
     )
 
     ydl_opts = {
@@ -26,8 +33,10 @@ def download_youtube_audio(url: str) -> str:
         "quiet": True,
 
         "js_runtimes": {
-            "node": {}
-        },
+    "node": {
+        "path": node_path
+    }
+},
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
