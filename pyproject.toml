@@ -30,6 +30,7 @@ dependencies = [
     "streamlit-extras>=1.6.0",
     "torchvision>=0.29.0",
     "watchdog>=6.0.0",
+    "yt-dlp-ejs>=0.8.0",
     "yt-dlp[default]>=2026.8.19",
 ]
 

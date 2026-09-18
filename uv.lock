@@ -45,6 +45,7 @@ dependencies = [
     { name = "torchvision" },
     { name = "watchdog" },
     { name = "yt-dlp", extra = ["default"] },
+    { name = "yt-dlp-ejs" },
 ]
 
 [package.metadata]
@@ -72,6 +73,7 @@ requires-dist = [
     { name = "torchvision", specifier = ">=0.29.0" },
     { name = "watchdog", specifier = ">=6.0.0" },
     { name = "yt-dlp", extras = ["default"], specifier = ">=2026.8.19" },
+    { name = "yt-dlp-ejs", specifier = ">=0.8.0" },
 ]
 
 [[package]]
