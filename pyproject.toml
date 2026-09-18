@@ -28,6 +28,7 @@ dependencies = [
     "sentence-transformers>=6.1.0",
     "streamlit>=1.64.0",
     "streamlit-extras>=1.6.0",
+    "torchvision>=0.29.0",
     "watchdog>=6.0.0",
     "yt-dlp>=2026.8.19",
 ]
