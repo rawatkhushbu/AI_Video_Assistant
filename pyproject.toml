@@ -8,9 +8,26 @@ authors = [
 ]
 requires-python = ">=3.10"
 dependencies = [
+    "chromadb>=1.5.9",
+    "deep-translator>=1.11.4",
+    "ffmpeg-python>=0.2.0",
+    "fpdf2>=2.8.8",
+    "huggingface-hub>=1.32.0",
+    "langchain>=1.4.1",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.3",
+    "langchain-huggingface>=1.2.2",
+    "langchain-mistralai>=1.1.6",
+    "mistralai>=2.10.1",
+    "onnxruntime<1.24",
     "openai-whisper>=20250625",
     "pydub>=0.25.1",
     "python-dotenv>=1.2.3",
+    "reportlab>=5.0.1",
+    "sentence-transformers>=6.1.0",
+    "streamlit>=1.64.0",
+    "streamlit-extras>=1.6.0",
+    "watchdog>=6.0.0",
     "yt-dlp>=2026.8.19",
 ]
 
