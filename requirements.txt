@@ -50,7 +50,9 @@ charset-normalizer==3.5.1
     #   reportlab
     #   requests
 chromadb==1.5.9
-    # via ai-video-assistant
+    # via
+    #   ai-video-assistant
+    #   langchain-chroma
 click==8.5.0
     # via
     #   huggingface-hub
@@ -189,6 +191,8 @@ kubernetes==36.0.3
     # via chromadb
 langchain==1.4.1
     # via ai-video-assistant
+langchain-chroma==1.1.0
+    # via ai-video-assistant
 langchain-classic==1.0.8
     # via langchain-community
 langchain-community==0.4.2
@@ -197,6 +201,7 @@ langchain-core==1.6.3
     # via
     #   ai-video-assistant
     #   langchain
+    #   langchain-chroma
     #   langchain-classic
     #   langchain-community
     #   langchain-huggingface
@@ -265,6 +270,7 @@ numba==0.67.0
 numpy==2.2.6 ; python_full_version < '3.11'
     # via
     #   chromadb
+    #   langchain-chroma
     #   langchain-community
     #   numba
     #   onnxruntime
@@ -279,6 +285,7 @@ numpy==2.2.6 ; python_full_version < '3.11'
 numpy==2.4.6 ; python_full_version == '3.11.*'
     # via
     #   chromadb
+    #   langchain-chroma
     #   langchain-community
     #   numba
     #   onnxruntime
@@ -293,6 +300,7 @@ numpy==2.4.6 ; python_full_version == '3.11.*'
 numpy==2.5.3 ; python_full_version >= '3.12'
     # via
     #   chromadb
+    #   langchain-chroma
     #   langchain-community
     #   numba
     #   onnxruntime
