@@ -22,4 +22,4 @@ langchain-mistralai
 mistralai
 deep-translator
 fpdf2
-reportlab
+reportlabaudioop-lts; python_version >= '3.13'
